@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header-links {
+            display: flex;
+            gap: 15px;
+        }
+        .header-links button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .header-links button:hover {
+            background-color: #d55c4b;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1600x800?text=Shoes+Collection') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .hero button:hover {
+            background-color: #d55c4b;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card .product-info {
+            padding: 20px;
+        }
+        .product-card h3 {
+            font-size: 1.6em;
+            margin: 0;
+        }
+        .product-card p {
+            font-size: 1.2em;
+            color: #ff6f61;
+            margin: 10px 0;
+        }
+        .product-card button {
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1em;
+        }
+        .product-card button:hover {
+            background-color: #444;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>JESSIE SHOE</h1>
+    <div class="header-links">
+        <button onclick="window.location.href='#login'">Login</button>
+        <button onclick="window.location.href='#register'">Register</button>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Step Into Style</h2>
+    <p>Explore the best shoes for every occasion. Shop the collection now.</p>
+    <button>Shop Now</button>
+</section>
+
+<section class="products">
+    <div class="product-card">
+        <img src="https://via.placeholder.com/500x300?text=Running+Shoes" alt="Running Shoes">
+        <div class="product-info">
+            <h3>Running Shoes</h3>
+            <p>$89.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/500x300?text=Leather+Boots" alt="Leather Boots">
+        <div class="product-info">
+            <h3>Leather Boots</h3>
+            <p>$149.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/500x300?text=Casual+Sneakers" alt="Casual Sneakers">
+        <div class="product-info">
+            <h3>Casual Sneakers</h3>
+            <p>$69.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/500x300?text=Formal+Shoes" alt="Formal Shoes">
+        <div class="product-info">
+            <h3>Formal Shoes</h3>
+            <p>$120.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 JESSIE SHOE. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
